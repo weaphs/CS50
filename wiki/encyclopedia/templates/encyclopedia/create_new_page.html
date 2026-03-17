@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creating page</title>
+</head>
+<body>
+    <form action="{% url 'create_page' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="title" placeholder="title">
+        <textarea name="content"></textarea>
+        <button type="submit">Подати статтю</button>
+    </form>
+</body>
+</html>

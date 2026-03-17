@@ -1,0 +1,38 @@
+*:root {
+box-sizing: border-box;
+}
+*,
+::before, ::after {
+box-sizing: border-box;
+}
+.div1{
+font-style:arial;
+font-size:1 rem;
+font-weight:bold;
+background-color:lightblue;
+padding:3em;
+border-radius:2em;
+}
+.div1 > a{
+float:right;
+color:black;
+background-color:white;
+padding:10px;
+border: 2px solid black;
+border-radius:5em;
+}
+.div2{
+text-align:center;
+max-width: 1080px;
+margin: 0 auto;
+}
+input{
+display:block;
+width:40%;
+font-size:1.5em;
+border-radius:5em;
+margin: 0 auto;
+}
+.inp{
+margin-top:150px;
+}
