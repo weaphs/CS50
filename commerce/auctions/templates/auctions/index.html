@@ -1,0 +1,16 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Active Listings</h2>
+    {% for auction in auctions %}
+        <a href= "{% url 'auction' auction.id %}"><h3> {{ auction.name }}</h3></a>
+        <h4> Description:</h4>
+        <p> {{ auction.description }} </p>
+        <h4> Initial bet: </h4>
+        <p> {{ auction.init_bet }} </p>
+        {% if auction.current_bet %}
+            <h4> Current bet: </h4>
+            <p> {{ auction.current_bet }} </p>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
